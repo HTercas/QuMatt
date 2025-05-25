@@ -1,0 +1,40 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+nav {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #0056b3;
+}
+
+.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.highlight-card {
+    flex: 1 1 250px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+}
