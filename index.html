@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quantum Matter Group | IST</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- P2Team's Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header (matches P2Team's style) -->
     <header>
-        <h1>Quantum Matter Team (QuMatt) </h1>
-        <p>Instituto Superior Técnico </p>
+        <h1>Quantum Matter Team (QuMatt)</h1>
+        <p>Instituto Superior Técnico</p>
     </header>
 
-    <!-- Navigation -->
     <nav>
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
@@ -23,46 +23,43 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <nav>
-    <a href="publications.html">Publications</a>
-    <!-- Other links -->
-    </nav>
-
-    <!-- Hero Section -->
     <section class="hero">
         <p>Wave if you met Schrödinger.</p>
     </section>
 
-    <!-- Research Highlights (3-column grid like P2Team) -->
-    <section class="highlights">
-        <div class="highlight-card">
+    <section class="research-grid">
+        <div class="research-card">
             <h3>Quantum Plasmonics</h3>
             <p>Landau damping, nonlinear waves, and topological modes in graphene.</p>
         </div>
-        <div class="highlight-card">
+        <div class="research-card">
             <h3>Quantum Fluids</h3>
             <p>Vortices, solitons, and turbulence in Bose-Einstein condensates.</p>
         </div>
-        <div class="highlight-card">
+        <div class="research-card">
             <h3>Cold-Atom Experiments</h3>
             <p>MOTLab: Quantum simulations with ultracold atoms.</p>
         </div>
     </section>
 
-    <!-- Selected Publications -->
-    <section class="pubs">
+    <section class="publications-preview">
         <h2>Selected Publications</h2>
-        <ul>
-            <li><a href="https://arxiv.org/abs/2402.17752">Multiplexed quantum repeaters (2024)</a></li>
-            <li><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.181803">Axion-plasmon polaritons (PRL 2018)</a></li>
-        </ul>
-        <a href="publications.html">Full list →</a>
+        <div class="publication-item">
+            <a href="https://arxiv.org/abs/2402.17752">Multiplexed quantum repeaters (2024)</a>
+        </div>
+        <div class="publication-item">
+            <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.181803">Axion-plasmon polaritons (PRL 2018)</a>
+        </div>
+        <a href="publications.html" class="see-more">Full list →</a>
     </section>
 
-    <nav>
-    <a href="research.html">Research</a>
-    <!-- Other links -->
-    </nav>
-    
+    <!-- Dark mode toggle (like P2Team) -->
+    <div class="dark-mode-toggle" onclick="toggleDarkMode()">🌓</div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 </html>
