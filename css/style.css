@@ -1,42 +1,78 @@
-/* Minimalist P2Team-like styles */
-body {
-  font-family: 'Helvetica', Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
+/* EXACT P2Team Styling - Copy All Below */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #0066cc;
+  --border-color: #eaeaea;
 }
 
-header, nav {
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --link-color: #4dabf7;
+    --border-color: #333333;
+  }
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 900px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #0056b3;
+  color: var(--link-color);
+  font-weight: 500;
 }
 
 .publication {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .pub-title {
-  font-weight: bold;
-  color: #0056b3;
+  font-weight: 600;
+  color: var(--link-color);
+  margin-bottom: 0.3rem;
+}
+
+.pub-authors {
+  margin-bottom: 0.3rem;
 }
 
 .pub-journal {
   font-style: italic;
+  margin-bottom: 0.5rem;
 }
 
 .pub-links a {
-  margin-right: 10px;
-  color: #666;
+  margin-right: 12px;
+  color: #666666;
+  text-decoration: underline;
+}
+
+/* Dark mode switch (optional) */
+.dark-mode-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }
