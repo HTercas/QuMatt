@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Quantum Matter Team (QuMatt) @ GoLP </title>
+    <title>Welcome to Quantum Matter Team (QuMatt) @ GoLP</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- P2Team's Inter font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -53,7 +53,13 @@
         <a href="publications.html" class="see-more">Full list →</a>
     </section>
 
+    <!-- Dark mode toggle (like P2Team) -->
+    <div class="dark-mode-toggle" onclick="toggleDarkMode()">🌓</div>
 
-   
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 </html>
